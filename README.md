@@ -1,2 +1,2 @@
-# spam_right
-make BTN_SIDE spam BTN_RIGHT using python evdev
+# Spam_right
+## a pyton script that runs in the background and waits for BTN_SIDE to spam right clicks
