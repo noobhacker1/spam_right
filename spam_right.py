@@ -6,10 +6,15 @@ import threading
 
 device = InputDevice('/dev/input/event5')
 
-ui = UInput()
+caps = {
+    ecodes.EV_KEY: [ecodes.BTN_RIGHT]
+}
+
+
+ui = UInput(caps)
 
 BUTTON_CODE = ecodes.BTN_SIDE  # Replace with the actual code for your extra button
-RIGHT_CLICK_CODE = ecodes.BTN_LEFT
+RIGHT_CLICK_CODE = ecodes.BTN_RIGHT
 runThread = 0
 
 
